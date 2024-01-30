@@ -53,7 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           text: 'Spots',
                           width: 240,
                           height: 55,
-                          onTap: () {},
+                          onTap: () {
+                            context.router.push(SpotsRoute());
+                          },
                         ),
                         SizedBox(height: 15),
                         ActionButtonWidget(
@@ -85,7 +87,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       SizedBox(width: 15),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          context.router.push(SettingsRoute());
+                        },
                         child: SvgPicture.asset(
                             'assets/images/elements/settings.svg'),
                       ),

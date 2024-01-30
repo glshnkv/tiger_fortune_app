@@ -26,9 +26,6 @@ class DailyRewardBloc extends Bloc<DailyRewardEvent, DailyRewardState> {
     } else {
       final int _timeLeft =
           twentyFourHours - (currentTime - storage.lastRewardTime);
-      print(twentyFourHours);
-      print(currentTime);
-      print(_timeLeft);
       emit(FailureDailyRewardState(timeLeft: _timeLeft));
     }
   }

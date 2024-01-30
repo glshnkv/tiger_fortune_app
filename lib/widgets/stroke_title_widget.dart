@@ -12,7 +12,7 @@ class StrokeTitleWidget extends StatelessWidget {
     return Stack(
       children: [
         Text(
-          text,
+          text.toUpperCase(),
           textAlign: TextAlign.start,
           style: TextStyle(
             fontStyle: FontStyle.italic,
@@ -26,7 +26,7 @@ class StrokeTitleWidget extends StatelessWidget {
         ),
         // Solid text as fill.
         Text(
-          text,
+          text.toUpperCase(),
           textAlign: TextAlign.start,
           style: TextStyle(
             fontStyle: FontStyle.italic,
