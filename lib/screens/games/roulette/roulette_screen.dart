@@ -142,7 +142,8 @@ class _RouletteScreenState extends State<RouletteScreen> {
         ),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(10),
           child: Stack(
             children: [
               Center(
